@@ -137,13 +137,14 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-let time = document.querySelector(".current-time");
+let time = document.querySelector("#current-time");
 time.innerHTML = `${hours}:${minutes}`;
 
-let currentDate = document.querySelector(".current__date");
+let currentDate = document.querySelector("#current-date");
 currentDate.innerHTML = `${day}, ${month} ${date}`;
 
-
+let currentDateCard = document.querySelector("#current-date-card");
+currentDateCard.innerHTML = `${day}, ${month} ${date}`;
 
 // function showCity(event) {
 //   event.preventDefault();

@@ -185,14 +185,15 @@ h1 {
 .search_icon {
    max-width: 58px;
    padding: 0 20px;
-  color: rgb(54, 54, 54);
+   color: rgb(54, 54, 54);
    background-color: #FEC635;
    border-top-left-radius: 5px;
    border-bottom-left-radius: 5px;
 }
-.search_icon:hover{
-  /* background-color: #f4b820;  */
- font-size: 22px;
+
+.search_icon:hover {
+   /* background-color: #f4b820;  */
+   font-size: 22px;
 }
 
 
@@ -235,7 +236,7 @@ h1 {
    margin-bottom: 20px;
 }
 
-.current__date {
+.current-date {
    margin-right: 40px;
 }
 
@@ -291,7 +292,7 @@ h1 {
 
 .weather_container__columns {
    display: flex;
-
+  
    justify-content: space-between;
    /* ---сколько процентов по ширине занимает каждый item--- */
    flex: 0 1 20%;
@@ -304,7 +305,6 @@ h1 {
    background-color: rgba(0, 0, 0, .5);
    border-radius: 10px;
    padding: 10px;
-
 }
 
 
