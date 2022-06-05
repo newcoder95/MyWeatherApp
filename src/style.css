@@ -118,8 +118,10 @@ main {
 [class*="__container"] {
    max-width: 1300px;
    margin: 0 auto;
-   padding: 0 30px;
+   padding: 0 15px;
 }
+
+
 
 .header {
    width: 100%;
@@ -151,7 +153,7 @@ h1 {
 }
 
 .current-form {
-   flex: 0 0 80px;
+   /* flex: 0 0 80px; */
    display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -160,7 +162,7 @@ h1 {
 }
 
 .search-form {
-   flex: 0 0 120px;
+   /* flex: 0 0 120px; */
    display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -192,16 +194,13 @@ h1 {
 }
 
 .search_icon:hover {
-   /* background-color: #f4b820;  */
    font-size: 22px;
 }
-
 
 
 .button-current {
    padding: 16px 25px;
    border-radius: 5px;
-   /* border: 2px solid rgb(61, 79, 119); */
    background-color: #FEC635;
    color: rgb(54, 54, 54);
    transition: all 0.3s ease 0s;
@@ -212,6 +211,7 @@ h1 {
    color: rgb(54, 54, 54);
 }
 
+/* ---------------------------Main--------------------------------- */
 .city__content {
    display: flex;
    align-items: center;
@@ -248,6 +248,10 @@ h1 {
    text-align: center;
 }
 
+.current-weather_icon img {
+   width: 100px;
+}
+
 .temperature__content {
    display: flex;
    justify-content: center;
@@ -255,7 +259,6 @@ h1 {
 }
 
 .current__temperature_day {
-
    text-align: center;
    color: white;
    font-size: 80px;
@@ -292,7 +295,7 @@ h1 {
 
 .weather_container__columns {
    display: flex;
-  
+
    justify-content: space-between;
    /* ---сколько процентов по ширине занимает каждый item--- */
    flex: 0 1 20%;
@@ -327,7 +330,7 @@ h1 {
    font-weight: 400;
 }
 
-.card-temperature__pic img {
+.card-weather__pic img {
    height: 60px;
    padding-right: 15px;
 }
@@ -337,7 +340,6 @@ h1 {
 .card-temperature__night {}
 
 .card-date {
-
    font-size: 18px;
    text-align: center;
    font-weight: 300;
@@ -387,9 +389,7 @@ h1 {
    text-align: left;
 }
 
-
-
-
+/* --------------------------------Footer---------------------------------- */
 .footer {
    font-size: 16px;
    font-weight: 400;
@@ -413,4 +413,157 @@ h1 {
    background-color: rgba(0, 0, 0, .2);
    border-radius: 3px;
    padding: 5px;
+}
+
+/* -----PC------ */
+@media (max-width: 1149.98px) {
+   [class*="__container"] {
+      max-width: 970px;
+   }
+    .card-weather__pic img {
+      height: 40px;
+      padding-right: 10px;
+   }
+
+   #day {
+      font-size: 36px;
+   }
+
+   #night {
+      font-size: 20px;
+   }
+
+   .card-date {
+      font-size: 14px;
+   }
+
+   .card-description {
+      font-size: 18px;
+   }
+
+   .card-wind__pic,
+   .card-humidity__pic {
+      min-width: 40px;
+   }
+
+   .card-wind__pic img,
+   .card-humidity__pic img {
+      height: 16px;
+
+   }
+
+   .card-wind__text,
+   .card-humidity__text {
+      font-size: 12px;
+   }
+}
+
+/* -------Планшет--------- */
+@media (max-width: 991.98px) {
+   [class*="__container"] {
+      max-width: 750px;
+   }
+
+   h1 {
+      font-size: 30px;
+   }
+
+   .button-current {
+      padding: 12px 18px;
+      font-size: 16px;
+   }
+
+   .search-form {
+      font-size: 16px;
+   }
+
+   .city__content {
+      font-size: 42px;
+   }
+
+   .current-date_container {
+      font-size: 26px;
+   }
+
+   .temperature__content {
+      margin-bottom: 5px;
+   }
+
+   .current__temperature_day {
+      font-size: 72px;
+      line-height: 80px;
+      height: 80px;
+   }
+
+   .units a {
+      font-size: 30px;
+   }
+
+   .current-weather_icon img {
+      width: 80px;
+   }
+
+   .temperature-description {
+      font-size: 36px;
+      margin-bottom: 20px;
+   }
+
+   .card-weather__pic img {
+      height: 30px;
+      padding-right: 5px;
+   }
+
+   #day {
+      font-size: 36px;
+
+   }
+
+   #night {
+      font-size: 20px;
+   }
+
+   .card-date {
+      font-size: 14px;
+   }
+
+   .card-description {
+      font-size: 18px;
+   }
+
+   .card-wind__pic,
+   .card-humidity__pic {
+
+      min-width: 30px;
+
+   }
+
+   .card-wind__pic img,
+   .card-humidity__pic img {
+      height: 16px;
+
+   }
+
+   .card-wind__text,
+   .card-humidity__text {
+      font-size: 12px;
+   }
+
+   .footer {
+
+      font-size: 12px;
+   }
+}
+
+/* -------Mobile--------- */
+@media (max-width: 749.98px) {
+   [class*="__container"] {
+      max-width: none;
+   }
+}
+
+/* ------SMALL-Mobile--------- */
+@media (max-width: 479.98px) {
+   [class*="__container"] {
+      max-width: none;
+   }
 }
