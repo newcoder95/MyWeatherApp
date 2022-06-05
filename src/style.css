@@ -1,0 +1,416 @@
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+/*--------------------*/
+
+body {
+   /* background-image: url('../img/background1.jpg'); */
+   background-image: url('../img/background/bg4_2.png');
+   background-position: 0 0;
+   background-repeat: repeat;
+   background-size: 35% auto;
+   width: 100%;
+   height: 100%;
+
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+}
+
+main {
+   flex: 1 1 auto;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+
+}
+
+[class*="__container"] {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+
+.header {
+   width: 100%;
+}
+
+.header__container {
+   display: flex;
+   flex-direction: column;
+   min-height: 150px;
+
+}
+
+h1 {
+   text-align: right;
+   color: #FEC838;
+   font-size: 36px;
+   margin: 20px 0;
+   font-weight: bold;
+}
+
+.location-form {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.location-columns {
+   display: flex;
+}
+
+.current-form {
+   flex: 0 0 80px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-left: 30px;
+   font-size: 18px;
+}
+
+.search-form {
+   flex: 0 0 120px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+
+   background-color: rgba(255, 255, 255, 0.7);
+   border-radius: 5px;
+   font-size: 18px;
+}
+
+.search-form_search {
+   padding-left: 15px;
+   background-color: rgba(255, 255, 255, 0);
+   border-radius: 5px;
+}
+
+.fa_icon {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.search_icon {
+   max-width: 58px;
+   padding: 0 20px;
+  color: rgb(54, 54, 54);
+   background-color: #FEC635;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.search_icon:hover{
+  /* background-color: #f4b820;  */
+ font-size: 22px;
+}
+
+
+
+.button-current {
+   padding: 16px 25px;
+   border-radius: 5px;
+   /* border: 2px solid rgb(61, 79, 119); */
+   background-color: #FEC635;
+   color: rgb(54, 54, 54);
+   transition: all 0.3s ease 0s;
+}
+
+.button-current:hover {
+   background-color: #f4b820;
+   color: rgb(54, 54, 54);
+}
+
+.city__content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 48px;
+   font-weight: 600;
+   margin: 10px 0 30px;
+}
+
+.geo__icon {
+   margin-right: 15px;
+}
+
+.current-date_container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.current__date {
+   margin-right: 40px;
+}
+
+.current-temperature_container {
+
+   color: white;
+   font-size: 30px;
+   font-weight: 600;
+   text-align: center;
+}
+
+.temperature__content {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.current__temperature_day {
+
+   text-align: center;
+   color: white;
+   font-size: 80px;
+   font-weight: 600;
+   padding-left: 40px;
+   float: left;
+   line-height: 90px;
+   height: 90px;
+
+}
+
+.units a {
+   padding-left: 10px;
+   font-size: 34px;
+   font-weight: bold;
+   text-decoration: none;
+   color: white;
+   vertical-align: top;
+}
+
+.temperature-description {
+   text-align: center;
+   color: white;
+   font-size: 30px;
+   font-weight: 400;
+   margin-bottom: 40px;
+   font-style: italic;
+}
+
+/* -------------------Cards-------------------------- */
+.weather_container {}
+
+.weather_container__row {}
+
+.weather_container__columns {
+   display: flex;
+
+   justify-content: space-between;
+   /* ---сколько процентов по ширине занимает каждый item--- */
+   flex: 0 1 20%;
+}
+
+
+.card {
+   display: flex;
+   color: white;
+   background-color: rgba(0, 0, 0, .5);
+   border-radius: 10px;
+   padding: 10px;
+
+}
+
+
+.card-temperature {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: center;
+   padding-bottom: 10px;
+}
+
+#day {
+   font-size: 48px;
+   font-weight: 600;
+   padding-right: 5px;
+}
+
+#night {
+   font-size: 32px;
+   font-weight: 400;
+}
+
+.card-temperature__pic img {
+   height: 60px;
+   padding-right: 15px;
+}
+
+.card-temperature__day {}
+
+.card-temperature__night {}
+
+.card-date {
+
+   font-size: 18px;
+   text-align: center;
+   font-weight: 300;
+   opacity: 80%;
+   padding-bottom: 10px;
+}
+
+.card-description {
+   font-size: 24px;
+   text-align: center;
+   font-weight: 500;
+   padding-bottom: 10px;
+}
+
+.card-wind {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-bottom: 10px;
+}
+
+.card-humidity {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.card-wind__pic,
+.card-humidity__pic {
+
+   min-width: 50px;
+
+}
+
+.card-wind__pic img,
+.card-humidity__pic img {
+   height: 20px;
+   display: block;
+   margin: 0 auto;
+}
+
+.card-wind__text,
+.card-humidity__text {
+   font-size: 16px;
+   font-weight: 400;
+   font-style: italic;
+   text-align: left;
+}
+
+
+
+
+.footer {
+   font-size: 16px;
+   font-weight: 400;
+   font-style: italic;
+   color: white;
+   text-align: center;
+   margin: 20px auto;
+}
+
+.source {
+   color: white;
+
+}
+
+.source:hover {
+   color: white;
+   text-decoration: underline;
+}
+
+.footer_content {
+   background-color: rgba(0, 0, 0, .2);
+   border-radius: 3px;
+   padding: 5px;
+}
