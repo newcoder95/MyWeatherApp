@@ -92,19 +92,20 @@ h6 {
 
 body {
    /* background-image: url('../img/background1.jpg'); */
-   background-image: url('../img/background/bg4_2.png');
+   background-image: url('../img/background/bgnew.jpg');
    background-position: 0 0;
-   background-repeat: repeat;
-   background-size: 35% auto;
+   background-repeat: no-repeat;
+   background-size: cover;
    width: 100%;
    height: 100%;
-
    font-family: "Poppins", sans-serif;
    font-weight: 300;
 }
 
-main {
-   flex: 1 1 auto;
+@media (max-width:850px) {
+   body {
+      background: linear-gradient(180.3deg, rgb(151, 181, 217) 17.2%, rgb(235, 183, 184) 57.3%)fixed;
+   }
 }
 
 .wrapper {
@@ -112,17 +113,24 @@ main {
    overflow: hidden;
    display: flex;
    flex-direction: column;
-
+   
 }
 
 [class*="__container"] {
-   max-width: 1300px;
-   margin: 0 auto;
+   max-width: 1000px;
+   margin: 20px auto;
    padding: 0 15px;
+
 }
 
-
-
+/* .weather-page{
+   background-color: rgba(255, 255, 255, 0.5);
+   max-width: 1000px;
+   margin: 20px auto;
+   padding: 0 15px;
+   border-radius: 10px;
+   border: 1px solid grey;
+} */
 .header {
    width: 100%;
 }
@@ -131,12 +139,11 @@ main {
    display: flex;
    flex-direction: column;
    min-height: 150px;
-
 }
 
 h1 {
    text-align: right;
-   color: #FEC838;
+   color: #8AA9C6;
    font-size: 36px;
    margin: 20px 0;
    font-weight: bold;
@@ -166,7 +173,6 @@ h1 {
    display: flex;
    justify-content: flex-end;
    align-items: center;
-
    background-color: rgba(255, 255, 255, 0.7);
    border-radius: 5px;
    font-size: 18px;
@@ -219,7 +225,7 @@ h1 {
    color: white;
    font-size: 48px;
    font-weight: 600;
-   margin: 10px 0 30px;
+   margin: 10px 0 20px;
 }
 
 .geo__icon {
@@ -284,7 +290,7 @@ h1 {
    color: white;
    font-size: 30px;
    font-weight: 400;
-   margin-bottom: 40px;
+   margin-bottom: 20px;
    font-style: italic;
 }
 
@@ -305,7 +311,7 @@ h1 {
 .card {
    display: flex;
    color: white;
-   background-color: rgba(0, 0, 0, .5);
+   background-color: rgba(0, 0, 0, .4);
    border-radius: 10px;
    padding: 10px;
 }
@@ -396,7 +402,7 @@ h1 {
    font-style: italic;
    color: white;
    text-align: center;
-   margin: 20px auto;
+   margin: 10px auto;
 }
 
 .source {
@@ -413,6 +419,13 @@ h1 {
    background-color: rgba(0, 0, 0, .2);
    border-radius: 3px;
    padding: 5px;
+   margin-top: 30px;
+}
+
+.footer_content a {
+   text-decoration: none;
+   color: white;
+   font-weight: 600;
 }
 
 /* -----PC------ */
@@ -420,7 +433,8 @@ h1 {
    [class*="__container"] {
       max-width: 970px;
    }
-    .card-weather__pic img {
+
+   .card-weather__pic img {
       height: 40px;
       padding-right: 10px;
    }
